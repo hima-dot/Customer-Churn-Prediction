@@ -1,10 +1,10 @@
-# 📉 Customer Churn Prediction
+# Customer Churn Prediction
 
 This project focuses on predicting whether a customer is likely to churn (leave the service) using various machine learning algorithms. By analyzing customer behavior and historical service data, the model helps identify at-risk customers so businesses can take proactive retention measures.
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Tech Stack](#-tech-stack)
@@ -20,7 +20,7 @@ This project focuses on predicting whether a customer is likely to churn (leave 
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 Churn prediction helps companies identify which customers are at risk of leaving. This project uses a dataset of 7,043 customer records with 21 features, and evaluates four machine learning models:
 
@@ -33,7 +33,7 @@ The goal is to determine the most suitable model for early churn prediction.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 - Python 3.8+
 - NumPy
@@ -43,7 +43,7 @@ The goal is to determine the most suitable model for early churn prediction.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Source**: [Kaggle – Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
 - **Records**: 7,043
@@ -52,7 +52,7 @@ The goal is to determine the most suitable model for early churn prediction.
 
 ---
 
-## 🔄 Data Preprocessing
+##  Data Preprocessing
 
 1. **Null & "No Service" Handling**: Replaced with appropriate values (e.g., "No").
 2. **Encoding**: Used label and one-hot encoding for categorical variables.
@@ -60,13 +60,13 @@ The goal is to determine the most suitable model for early churn prediction.
 4. **Train-Test Split**: 75% training and 25% testing.
 5. **EDA**: Explored churn distribution and feature relevance.
 
-### ✨ Final Features After Encoding:
+###  Final Features After Encoding:
 
 `gender_Male`, `senior_citizen_1`, `partner_Yes`, `dependents_Yes`, `phone_service_Yes`, `multiple_lines_Yes`, `internet_service_Fiber optic`, `internet_service_No`, `online_security_Yes`, `online_backup_Yes`, `device_protection_Yes`, `tech_support_Yes`, `streaming_tv_Yes`, `streaming_movies_Yes`, `contract_One year`, `contract_Two year`, `paperless_billing_Yes`, `payment_method_Credit card (automatic)`, `payment_method_Electronic check`, `payment_method_Mailed check`
 
 ---
 
-## 🧪 Machine Learning Models
+##  Machine Learning Models
 
 ### 1. **Logistic Regression**
 - Binary classification algorithm.
@@ -93,12 +93,12 @@ The goal is to determine the most suitable model for early churn prediction.
 
 ## 🏋️ Training & Evaluation
 
-### 🧠 Training Strategy
+###  Training Strategy
 
 - All models were trained on the encoded dataset with 23 features.
 - Evaluated using accuracy, precision, recall, and F1-score.
 
-### 📊 Results Summary
+###  Results Summary
 
 | Model               | Accuracy (%) | Precision (%) | Recall (%) | F1-Score (%) |
 |---------------------|--------------|----------------|-------------|---------------|
@@ -107,9 +107,9 @@ The goal is to determine the most suitable model for early churn prediction.
 | KNN                 | 76.77        | 57.0           | 50.0        | 53.78         |
 | GMM                 | 54.57        | Very Low       | Very Low    | Very Low      |
 
-> ✅ **Best Model**: Logistic Regression (highest accuracy & balanced F1-score)
+>  **Best Model**: Logistic Regression (highest accuracy & balanced F1-score)
 
-### 🔧 Improvement Suggestions
+###  Improvement Suggestions
 
 - **SMOTE** for balancing class distribution.
 - **Regularization** (L1, L2) for better generalization.
@@ -119,7 +119,7 @@ The goal is to determine the most suitable model for early churn prediction.
 
 ---
 
-## 🧪 Environment Setup
+##  Environment Setup
 
 ### ⚙️ Python Version
 - Python 3.8 or later
